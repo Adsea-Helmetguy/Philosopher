@@ -37,7 +37,7 @@ replacing the meatball order with chickensoup instead.
 In order to prevent the above we must ensure that the 2nd waiter does not overwrite the 1)meatball noodle order until it's stored/used.
 That's where Mutex comes in.
 Taking the previous example we can avoid the overwrite by adding a lock in the deposit function. 
-If 2nd waiter's chicken souo reaches the locked thread meatball noodle from 1st waiter, 2nd waiter will just have to wait until 
+If 2nd waiter's chicken soup reaches the locked thread meatball noodle from 1st waiter, 2nd waiter will just have to wait until 
 1st waiter is done saving the order(executing the code) and reaches the unlock, only then 2nd waiter will write down his order.
 
 1)First Step: Checking Valid Input
